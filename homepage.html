@@ -78,46 +78,98 @@
                 different places.<br></p>
         </section>
         <table>
-            <tr>
-                <th>fruit</th>
-                <th>carbs[g]</th>
-                <th>sugars[g]</th>
-                <th>fiber[g]</th>
-            </tr>
-            <tr>
-                <td>blackberry</td>
-                <td>13.8</td>
-                <td>7.0</td>
-                <td>7.6</td>
-            </tr>
-            <tr>
-                <td>blueberry</td>
-                <td>21.5</td>
-                <td>14.7</td>
-                <td>3.6</td>
-            </tr>
-            <tr>
-                <td>cranberry</td>
-                <td>12.0</td>
-                <td>4.27</td>
-                <td>3.6</td>
-            </tr>
-            <tr>
-                <td>raspberry</td>
-                <td>14.6</td>
-                <td>5.44</td>
-                <td>8.04</td>
-            </tr>
-            <tr>
-                <td>strawberry</td>
-                <td>11.7</td>
-                <td>7.43</td>
-                <td>3.04</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th rowspan="2">Fruit</th>
+                    <th rowspan="2">Carbs[g]</th>
+                    <th rowspan="2">Sugars[g]</th>
+                    <th rowspan="2">Fiber[g]</th>
+                    <th colspan="4">Vitamins[mg]</th>
+                    <th colspan="2">Minerals[mg]</th>
+                </tr>
+                <tr>
+                    <th>C</th>
+                    <th>E</th>
+                    <th>A</th>
+                    <th>D</th>
+                    <th>Mg</th>
+                    <th>K</th>
+                </tr>
+                <tr>
+                    <td>Blackberry</td>
+                    <td>13.8</td>
+                    <td>7.0</td>
+                    <td>7.6</td>
+                    <td>21</td>
+                    <td>1.17</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>20</td>
+                    <td>162</td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td>Blueberry</td>
+                    <td>21.5</td>
+                    <td>14.7</td>
+                    <td>3.6</td>
+                    <td>9.7</td>
+                    <td>0.57</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>77</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cranberry</td>
+                    <td>12.0</td>
+                    <td>4.27</td>
+                    <td>3.6</td>
+                    <td>14</td>
+                    <td>1.32</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>Raspberry</td>
+                    <td>14.6</td>
+                    <td>5.44</td>
+                    <td>8.04</td>
+                    <td>26.2</td>
+                    <td>0.87</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>22</td>
+                    <td>151</td>
+                </tr>
+                <tr>
+                    <td>Strawberry</td>
+                    <td>11.7</td>
+                    <td>7.43</td>
+                    <td>3.04</td>
+                    <td>58.8</td>
+                    <td>0.29</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>13</td>
+                    <td>153</td>
+                </tr>
+            </tbody>
         </table>
     </main>
 </body>
-
+<form action="/sendtoserver">
+    <input type="text" placeholder="name"> <br>
+    <input type="password" placeholder="password"> <br>
+    <input type="number" placeholder="id"> <br>
+    <input type="text" placeholder="message"> <br>
+    <input type="submit"> <br>
+    <input type="color"> <br>
+</form>
 
 <!--sub, sup practice-->
 <h2><sup>1</sup>/<sub>2</sub> + <sup>1</sup>/<sub>2</sub></h2>
