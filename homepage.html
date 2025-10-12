@@ -163,13 +163,37 @@
     </main>
 </body>
 <form action="/sendtoserver">
-    <input type="text" placeholder="name"> <br>
-    <input type="password" placeholder="password"> <br>
-    <input type="number" placeholder="id"> <br>
-    <input type="text" placeholder="message"> <br>
-    <input type="submit"> <br>
-    <input type="color"> <br>
+    <p>
+        <label for="username">Username: </label>
+        <input type="text" placeholder="Username" id="username">
+    </p>
+    <p>
+        <label for="email">Email: </label>
+        <input type="email" placeholder="Email" id="email">
+    </p>
+    <p>
+        <label for="age">Age: </label>
+        <input type="number" placeholder="Age" id="age">
+    </p>
+    <p> <label for="password">Password: </label>
+        <input type="password" placeholder="Password" id="password">
+    </p>
+    <p>
+        <label for="message">message: </label>
+        <input type="text" placeholder="message" id="message">
+    </p>
+    <p>
+        <label for="color">Fav color: </label>
+        <input type="color" id="color">
+    </p>
+    <!--Different ways to do a button-->
+    <input type="submit">
+    <input type="submit" value="enter">
+    <button>this is a button</button>
+    <button type="button">this button won't submit the form</button>
 </form>
+<hr>
+<button>this is a button outside the form</button>
 
 <!--sub, sup practice-->
 <h2><sup>1</sup>/<sub>2</sub> + <sup>1</sup>/<sub>2</sub></h2>
