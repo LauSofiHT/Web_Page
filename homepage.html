@@ -164,22 +164,22 @@
 </body>
 <form action="/sendtoserver">
     <p>
-        <label for="username">Username: </label>
+        <label for="username">Username: </label><br>
         <input type="text" placeholder="Username" id="username" name="username">
     </p>
     <p>
-        <label for="email">Email: </label>
+        <label for="email">Email: </label><br>
         <input type="email" placeholder="Email" id="email" name="email">
     </p>
     <p>
-        <label for="age">Age: </label>
+        <label for="age">Age: </label><br>
         <input type="number" placeholder="Age" id="age" name="edad">
     </p>
-    <p> <label for="password">Password: </label>
+    <p> <label for="password">Password: </label><br>
         <input type="password" placeholder="Password" id="password" name="password">
     </p>
     <p>
-        <label for="message">message: </label>
+        <label for="message">message: </label><br>
         <input type="text" placeholder="message" id="message" name="message">
     </p>
     <p>
@@ -193,6 +193,41 @@
     <button type="button">this button won't submit the form</button>
 </form>
 <hr>
+<!--Search on ....... -->
+<form action="https://www.google.com/search">
+    <label for="fruit">Favorite Fruit: </label><br>
+    <input type="text" placeholder="Fruit" id="fruit" name="q">
+    <input type="submit" value="Search Google">
+</form>
+<form action="https://en.wikipedia.org/wiki">
+    <label for="fruit">Favorite Fruit: </label><br>
+    <input type="text" placeholder="Fruit" id="fruit" name="search">
+    <input type="submit" value="Search Wikipedia">
+</form>
+<form action="https://www.youtube.com/results">
+    <label for="fruit">Favorite Fruit: </label><br>
+    <input type="text" placeholder="Fruit" id="fruit" name="search_query">
+    <input type="submit" value="Search Youtube">
+</form>
+<form action="https://www.bing.com/search">
+    <label for="fruit">Favorite Fruit: </label><br>
+    <input type="text" placeholder="Fruit" id="fruit" name="q">
+    <input type="submit" value="Search Bing">
+</form>
+<hr>
+<form action="/sendtoserver">
+    <!--checkbox-->
+    <label for="check">Vegetarian</label>
+    <input type="checkbox" id="check" name="answer" checked><br>
+    <!--radio button-->
+    <label for="M">M</label>
+    <input type="radio" id="M" name="Gender" value="M">
+    <label for="F">F</label>
+    <input type="radio" id="F" name="Gender" value="F"><br>
+    <input type="submit" value="Enter">
+</form>
+
+
 <button>this is a button outside the form</button>
 
 <!--sub, sup practice-->
