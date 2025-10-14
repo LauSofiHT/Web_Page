@@ -3,6 +3,7 @@
 
 <head>
     <title>berry deli</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <!--this is a comment-->
 <nav>
@@ -245,15 +246,25 @@
         <textarea name="instrucctions" id="instrucctions" cols="40" rows="5"></textarea>
     </p>
 </form>
+<!--input validations-->
+<form action="/sendtoserver">
+    <label for="name">First Name</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" minlength="5" maxlength="10" required><br>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required><br>
+    <label for="url">Url</label>
+    <input type="url" id="url" name="url" required><br>
+    <input type="submit" value="enter">
+</form>
 <hr>
 <button>this is a button outside the form</button>
-
 <!--sub, sup practice-->
 <h2><sup>1</sup>/<sub>2</sub> + <sup>1</sup>/<sub>2</sub></h2>
 <h2>H<sub>2</sub>O</h2>
 <!--html entities practice-->
 <h1>&spades; &clubs; &hearts; &diams; &#9731;</h1>
-
 <h2>References</h2>
 <ul>
     <li><a href="https://en.wikipedia.org/wiki/Berry">Wikipedia</a></li>
