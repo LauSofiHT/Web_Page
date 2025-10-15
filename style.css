@@ -1,14 +1,36 @@
 h1 {
-    color:indigo;
-    background-color: lavender;
+    color: indigo;
+    background-color: hsl(140, 100%, 90%);
+    text-align: center;
+    text-decoration: hsl(292.73, 100%, 70.29%) underline wavy;
+    letter-spacing: 2px;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: Roman,"Ravie","Old English Text MT","Blackadder ITC","Bauhaus 93", "Algerian", "Century Gothic", "Impact", "Lucida Sans", "Calibri", Verdana, Helvetica;
 }
 
 h2 {
-    color: red;
-    background-color: rgb(193, 253, 202);
+    color: rgb(249, 63, 159);
+    background-color: rgb(206, 252, 209);
 }
 
 p {
     color: black;
     background-color: aliceblue;
+    text-align: justify;
+    /*line-height: 1.5;*/
 }
+
+body {
+    background-color: rgb(255, 213, 244);
+}
+
+a {
+    text-decoration: none;
+}
+
+/*  universal selector: 
+*{
+    color: blue;
+}
+*/
