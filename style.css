@@ -7,11 +7,13 @@ h1 {
     font-size: 50px;
     font-weight: 500;
     font-family: "Times New Roman", "Ravie", "Old English Text MT", "Blackadder ITC", "Bauhaus 93", "Algerian", "Century Gothic", "Impact", "Lucida Sans", "Calibri", Verdana, Helvetica;
+
 }
 
 h2 {
     color: rgb(249, 63, 159);
     background-color: rgb(206, 252, 209);
+    width: 300px;
 }
 
 p {
@@ -105,5 +107,46 @@ p::first-line{
 
 p::selection{
     color:white;
-    background-color: hsl(263, 70%, 12%); ;
+    background-color: hsl(263, 70%, 12%);
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: hsl(135, 75%, 91%);
+}
+
+#one {
+    background-color: hsl(249, 68%, 29%);
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    box-sizing: border-box;
+}
+
+#two {
+    background-color: hsl(249, 68%, 29%);
+    border-width: 5px;
+    border-color: black;
+    border-style: solid dashed;
+    border-left-width: 10px;
+    border-left-color: hsl(242, 24%, 75%);
+    box-sizing: border-box;
+}
+
+#three {
+    background-color: hsl(249, 68%, 29%);
+    border: 5px dashed hsl(198, 67%, 76%);
+    border-left-style: dotted;
+    border-right-style: dotted;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+#circle {
+    background-color: hsl(198, 67%, 76%);
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 50%;
 }
