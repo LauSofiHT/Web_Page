@@ -1,3 +1,7 @@
+html {
+    font-size: 17.55px;
+}
+
 h1 {
     color: rgb(249, 63, 159);
     background-color: hsl(140, 100%, 95%);
@@ -125,6 +129,7 @@ p::selection {
 }
 
 div {
+    font-size: 5px;
     width: 200px;
     height: 200px;
     background-color: hsl(135, 75%, 91%);
@@ -157,7 +162,6 @@ div {
     box-sizing: border-box;
     border-radius: 30px;
 }
-
 
 #circle {
     background-color: hsl(198, 67%, 76%);
@@ -204,21 +208,34 @@ img {
     padding: 10px;
 }
 
-#headers h1 {
-    width: 10px;
+/* inline practice */
+#one, #two, #three, #circle {
+    margin: 25px;
+    font-size: 10px;
     display: block;
 }
 
-/* inline practice */
-nav li{
+nav li {
     border: 3px solid rgb(249, 63, 159);
     padding: 0px 10px;
     display: inline;
 }
 
-#header {
+#h1 {
+    color: red;
+    background-color: pink;
     width: 400px;
     margin: 100px 150px;
+    border-color: red;
+    display: inline-block;
+}
+
+#h2 {
+    color: pink;
+    background-color: red;
+    width: 400px;
+    margin: 100px 150px;
+    border-color: pink;
     display: inline-block;
 }
 
@@ -227,4 +244,99 @@ span {
     margin: 0px 5px;
     padding: 0px 5px;
     display: inline;
+}
+
+/* percentage practice */
+#percentage {
+    background-color:hsl(140, 70%, 70%);
+    width: 400px;
+    height: 400px;
+    margin: 0px 500px; 
+    border-radius: 20px 0px; 
+}
+
+#percentage div {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(249, 63, 159);
+    width: 100%;
+    height: 20%;
+    padding: 2px 0px;
+    border-radius: 20px 0px;
+}
+
+/* em units practice */
+article {
+    font-size: 20px;
+    width: 900px;
+    height: 400px;
+    background-color: hsl( 331, 83%, 57%);
+}
+
+#news h2 {
+    color: hsl(332, 96%, 90%);
+    font-family: "Candara","Gabriola";
+    font-size: 1em;
+    width: 5em;
+    height: 5em;
+    background-color: hsla(140, 70%, 70%, 0.653);
+    border-radius: 0px 10px;
+}
+
+#news p {
+    font-size: 1em;
+    font-family: "Gabriola";
+    background-color: hsla(331, 84%, 90%, 0.511);
+    margin-left: 10.5em;
+    width: 29em;
+    padding: 2em;
+    border: 5px solid hsl(332, 96%, 90%);
+    border-radius: 0px 20px; 
+}
+
+/* em units
+#units ul{
+    font-size: 2em;
+} */
+
+/*rem units*/
+#units ul {
+    font-size: 1rem;
+}
+
+/* opacity practice */
+#opacity {
+    background-color: hsla(332, 96%, 50%, 0.541);
+    margin: 5px;
+}
+
+#opacity div {
+    background-color:  hsl(332, 96%, 50%);
+    width: 300px;
+    display: inline-block;
+    margin:0px 83px;
+}
+
+#opacity p {
+    font-size: 14px;
+    color: black;
+    background-color: hsl(198, 67%, 76%);
+    opacity: 80%;
+    border-radius: 0px;
+    margin: 36px 0px;
+}
+
+/* position practice */
+#static div {
+    width: 100px;
+    height: 100px;
+    background-color: hsl(21, 100%, 88%);
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+#middle div {
+    
 }
