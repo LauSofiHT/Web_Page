@@ -257,7 +257,7 @@ span {
     background-color: hsl(140, 70%, 70%);
     width: 400px;
     height: 400px;
-    margin: 0px 500px;
+    margin: 2px 500px;
     border-radius: 20px 0px;
 }
 
@@ -278,6 +278,9 @@ article {
     width: 900px;
     height: 400px;
     background-color: hsl(331, 83%, 57%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 300px;
+    border-bottom-left-radius: 400px;
 }
 
 #news h2 {
@@ -287,14 +290,17 @@ article {
     width: 5em;
     height: 5em;
     background-color: hsla(140, 70%, 70%, 0.653);
-    border-radius: 0px 10px;
+    border-top-right-radius: 250px;
+    border-bottom-left-radius: 250px;
+    border-width: 5px;
+    margin-left: 0em;
 }
 
 #news p {
     font-size: 1em;
     font-family: "Gabriola";
     background-color: hsla(331, 84%, 90%, 0.511);
-    margin-left: 10.5em;
+    margin-left: 9em;
     width: 29em;
     padding: 2em;
     border: 5px solid hsl(332, 96%, 90%);
@@ -367,8 +373,9 @@ article {
     background-color: hsl(331, 83%, 77%);
     border: 5px solid hsl(331, 83%, 50%);
     border-radius: 20px;
-    position: static; 
-    top: 100px;  /* has no effect */
+    position: static;
+    top: 100px;
+    /* has no effect */
 }
 
 #relative h2 {
@@ -394,11 +401,12 @@ article {
     background-color: hsl(331, 83%, 77%);
     border: 5px solid hsl(331, 83%, 50%);
     border-radius: 20px;
-    position: relative; 
+    position: relative;
     top: 0px;
     bottom: 0px;
     right: 0px;
-    left: 100px; /* displaces to the opposite */  
+    left: 100px;
+    /* displaces to the opposite */
 }
 
 #absolute h2 {
@@ -428,11 +436,11 @@ article {
     background-color: hsl(331, 83%, 77%);
     border: 5px solid hsl(331, 83%, 50%);
     border-radius: 20px;
-    position: absolute; 
+    position: absolute;
     top: 80px;
     bottom: 0px;
     right: 0px;
-    left: 70px;  
+    left: 70px;
 }
 
 #fixed h2 {
@@ -458,13 +466,68 @@ article {
     background-color: hsl(331, 83%, 77%);
     border: 5px solid hsl(331, 83%, 50%);
     border-radius: 20px;
-    position: fixed; 
+    position: fixed;
     top: 600px;
     bottom: 0px;
     right: 0px;
-    left: 1300px;  
+    left: 1300px;
 }
 
+/* transitions practice */
+#figure h1 {
+    color: black;
+    width: 400px;
+    height: 100px;
+    font-size: medium;
+    background-color: rgba(255, 255, 0, 0);
+    border: none;
+    border-radius: 0px;
+    text-align: center;
+}
 
+#figure #square {
+    width: 100px;
+    height: 100px;
+    background-color: hsl(320, 91%, 80%);
+    border: 5px dotted hsl(320, 91%, 50%);
+    margin: 10px;
+    transition: all 2s;
+    /* property name | duration | timing function | Delay */
+}
 
+#figure:hover #square {
+    background-color: hsl(181, 97%, 86%);
+    border: 5px solid hsl(181, 97%, 50%);
+    border-radius: 50%;
+}
 
+#figure div {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    display: block;
+    background-color: hsl(181, 97%, 40%);
+    transition: all 2s;
+    /* property name | duration | timing function | Delay */
+}
+
+#figure:hover div {
+    margin-left: 400px;
+    background-color: hsl(181, 97%, 60%);
+}
+
+#figure div:nth-of-type(2) {
+    transition-timing-function:  ease-in;
+}
+
+#figure div:nth-of-type(3) {
+    transition-timing-function: ease-out;
+}
+
+#figure div:nth-of-type(4) {
+    transition-timing-function:  cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#figure div:nth-of-type(5) {
+    transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
