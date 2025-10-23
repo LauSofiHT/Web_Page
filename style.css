@@ -25,6 +25,10 @@ h2 {
     border-radius: 20px;
 }
 
+h3 {
+    color: rgb(249, 63, 159);
+}
+
 p {
     color: white;
     background-color: hsla(316, 90%, 35%, 0.658);
@@ -277,7 +281,7 @@ article {
     font-size: 20px;
     width: 900px;
     height: 400px;
-    background-color: hsl(331, 83%, 57%);
+    background-color: hsl(331, 83%, 50%);
     border-top-left-radius: 10px;
     border-top-right-radius: 300px;
     border-bottom-left-radius: 400px;
@@ -517,7 +521,7 @@ article {
 }
 
 #figure div:nth-of-type(2) {
-    transition-timing-function:  ease-in;
+    transition-timing-function: ease-in;
 }
 
 #figure div:nth-of-type(3) {
@@ -531,3 +535,68 @@ article {
 #figure div:nth-of-type(5) {
     transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
+
+/* transform */
+#transform h1 {
+    color: black;
+    width: 400px;
+    height: 100px;
+    font-size: medium;
+    background-color: rgba(255, 255, 0, 0);
+    border: none;
+    border-radius: 0px;
+    text-align: center;
+}
+
+#transform h3 {
+    color: #ee82ee;
+    text-align: center;
+    width: 150px;
+    height: 20px;
+    padding: 5px;
+    margin: 5px auto;
+    background-color: hsl(190, 90%, 90%);
+    border: 5px solid white;
+    rotate: 2deg;
+}
+
+#transform h3:nth-of-type(2n) {
+    background-color: hsl(168, 90%, 77%);  
+}
+
+#transform h3:nth-of-type(3n) {
+    background-color: hsl(180, 90%, 77%);
+}
+
+#transform section:nth-of-type(1) h3:nth-of-type(2n) {
+    /*transform-origin: bottom left;*/
+    rotate: 10deg;
+    scale: 0.8;
+    transform: translateX(50px);
+}
+
+#transform section:nth-of-type(1) h3:nth-of-type(3n) {
+   /*transform-origin: top right;*/
+    rotate: -182deg;
+    transform: scaleY(1.2);
+    transform: translate(-15px, -10px); /*X | Y*/
+}
+
+#transform section:nth-of-type(2) h3:nth-of-type(2n) {
+    rotate: 0deg;
+    scale: 0.5;
+    transform: translateX(-100px);
+    transform: skew(30deg);
+}
+
+#transform section:nth-of-type(2) h3:nth-of-type(3n) {
+    rotate: 0deg;
+    transform: scale(1,1.5);
+    transform: translateX(-50px);
+    transform: skew(30deg, 10deg); /* X | Y */
+}
+
+#transform section:nth-of-type(1) {
+    transform: scale(1.1) skew(20deg, 5deg);
+}
+
