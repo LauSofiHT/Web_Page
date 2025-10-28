@@ -608,7 +608,7 @@ article {
     width: 400px;
     height: 100px;
     font-size: medium;
-    background-color: rgba(255, 255, 0,0);
+    background-color: rgba(255, 255, 0, 0);
     border: none;
     border-radius: 0px;
     text-align: center;
@@ -626,16 +626,59 @@ article {
 #switch button {
     font-size: 1em;
     color: hsl(27, 100%, 52%);
-    border: 2px solid hsl(27, 100%, 52%); 
+    border: 2px solid hsl(27, 100%, 52%);
     background-color: hsl(229, 12%, 17%);
     padding: 1em 2em;
     transition: all 0.25s;
 }
 
 #switch button:hover {
-   color: white;
-   border: 2px solid hsl(69, 100%, 76%);
-   box-shadow: 0em 0.5em 0.5em -0.4em hsl(69, 100%, 76%);
-   transform: translateY(-0.25em);
-   cursor: pointer;
+    color: white;
+    border: 2px solid hsl(69, 100%, 76%);
+    box-shadow: 0em 0.5em 0.5em -0.4em hsl(69, 100%, 76%);
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+/* background img */
+#head_background_img {
+    color: black;
+    width: 400px;
+    height: 100px;
+    font-size: medium;
+    background-color: rgba(255, 255, 0, 0);
+    border: none;
+    border-radius: 0px;
+    text-align: center;
+}
+
+#background_img {
+    width: 80%;
+    height: 800px;
+    background: center/80% no-repeat url("https://images.unsplash.com/photo-1569614078353-2bf54d3acc0d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1190"), hsl(85, 59%, 58%);;
+    /*
+    background-image: url("https://images.unsplash.com/photo-1566804770468-867f6158bda5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+     background-color: hsl(85, 59%, 58%);
+    */
+    border:5px solid hsl(69, 100%, 50%);;
+    margin: auto;
+}
+
+#background_img h1 {
+    color: white;
+    font-family: candara;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 40px;
+    position: relative;
+    top: -25px;
+    right: 200px;
+    left: 0px;
+    width: 400px;
+    height: 100px;
+    background-color: rgba(255, 255, 0, 0);
+    border: none;
 }
