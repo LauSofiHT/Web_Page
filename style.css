@@ -682,3 +682,82 @@ article {
     background-color: rgba(255, 255, 0, 0);
     border: none;
 }
+
+/* image gallery */
+#head_gallery {
+    color: black;
+    width: 400px;
+    height: 100px;
+    font-size: medium;
+    background-color: rgba(255, 255, 0, 0);
+    border: none;
+    border-radius: 0px;
+    text-align: center;
+}
+
+#gallery h1::first-letter {
+    font-size: 1.2em;
+}
+
+#gallery h1{
+    color: hsl(334, 100%, 36%);
+    font-family: "Lobster Two";
+    /*text-transform: uppercase;*/
+    font-size: 1em;
+    text-align: left;
+    border-bottom: 3px solid hsl(118, 26%, 27%);
+    background-color: rgba(255, 255, 0, 0);
+    border-radius: 0px;
+    width: 25%;
+    margin-left: 4%;
+}
+
+#gallery img{
+    width: 25%;
+    margin: 4%;
+    padding: 0px;
+    border: none;
+    border-radius: 0px;
+}
+
+/* Flexbox */
+#head_flexbox {
+    color: black;
+    width: 400px;
+    height: 100px;
+    font-size: medium;
+    background-color: rgba(255, 255, 0, 0);
+    border: none;
+    border-radius: 0px;
+    text-align: center;
+}
+
+#container {
+    background-color: black;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+#container div:nth-child(1) {
+    background-color: hsl(349, 100%, 90%);
+}
+
+#container div:nth-child(2) {
+    background-color: hsl(349, 100%, 80%);
+}
+
+#container div:nth-child(3) {
+    background-color: hsl(349, 100%, 68%);
+}
+
+#container div:nth-child(4) {
+    background-color: hsl(349, 100%, 54%);
+}
+
+#container div:nth-child(5) {
+    background-color: hsl(349, 100%, 44%);
+}
