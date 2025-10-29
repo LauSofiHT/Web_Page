@@ -655,7 +655,8 @@ article {
 #background_img {
     width: 80%;
     height: 800px;
-    background: center/80% no-repeat url("https://images.unsplash.com/photo-1569614078353-2bf54d3acc0d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1190"), hsl(85, 59%, 58%);;
+    background: center/80% no-repeat url("https://images.unsplash.com/photo-1569614078353-2bf54d3acc0d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1190"), hsl(85, 59%, 58%);
+    ;
     /*
     background-image: url("https://images.unsplash.com/photo-1566804770468-867f6158bda5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070");
     background-size: cover;
@@ -663,7 +664,8 @@ article {
     background-repeat: no-repeat;
      background-color: hsl(85, 59%, 58%);
     */
-    border:5px solid hsl(69, 100%, 50%);;
+    border: 5px solid hsl(69, 100%, 50%);
+    ;
     margin: auto;
 }
 
@@ -699,7 +701,7 @@ article {
     font-size: 1.2em;
 }
 
-#gallery h1{
+#gallery h1 {
     color: hsl(334, 100%, 36%);
     font-family: "Lobster Two";
     /*text-transform: uppercase;*/
@@ -712,7 +714,7 @@ article {
     margin-left: 4%;
 }
 
-#gallery img{
+#gallery img {
     width: 25%;
     margin: 4%;
     padding: 0px;
@@ -734,16 +736,41 @@ article {
 
 #container {
     background-color: black;
-    width: 90%;
-    height: 500px;
+    width: 80%;
+    height: 400px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
+    /* flex-direction: column-reverse; */
+    justify-content: space-evenly;
+    /* justify-content: flex-end;
+    justify-content: flex-start;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between; */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+    align-items: center;
+    /* align-items: flex-end; 
+        align-items: baseline; */
+    /* align-content: center; */
 
+}
+
+#container div {
+    width: 100px;
+    height: 100px;
+    max-width: 400px;
+    flex-basis: 200px;
+    /*expands in the main axis direction*/
+    /*flex-grow: 0;
+      flex-shrink: 0;*/
 }
 
 #container div:nth-child(1) {
     background-color: hsl(349, 100%, 90%);
+    align-self: flex-start;
+    flex-grow: 1;
 }
 
 #container div:nth-child(2) {
@@ -752,6 +779,8 @@ article {
 
 #container div:nth-child(3) {
     background-color: hsl(349, 100%, 68%);
+    align-self: flex-end;
+    flex-shrink: 1;
 }
 
 #container div:nth-child(4) {
@@ -760,4 +789,75 @@ article {
 
 #container div:nth-child(5) {
     background-color: hsl(349, 100%, 44%);
+    align-self: flex-start;
+    flex-grow: 1;
 }
+
+#flexbox {
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+    background-color: aqua;
+}
+
+#flexbox .sidebar {
+    background-color: hsl(349, 100%, 54%);
+    flex: 1 2 200px;
+    /* grow| shrink| basis */
+}
+
+#flexbox .maincontent {
+    background-color: hsl(349, 100%, 80%);
+    flex: 1 2 200px;
+    /* grow| shrink| basis */
+}
+
+/* Media Queries */
+@media all and (max-width: 500px) {
+    #container{
+        background-color: blue;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        color: hsl(341, 80%, 61%);
+        font-family: "Lobster Two";
+        background-color:  hsl(320, 70%, 90%);
+        border-bottom: 4px solid hsl(341, 74%, 61%);
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    p {
+        color: black;
+        background-color:  hsl(278, 60%, 90%);
+        font-family: Roboto;
+        border-radius: 0;
+    }
+
+    p::first-line {
+        color: black;
+    }
+}
+
+/* @media (min-width: 800px){
+    h1 {
+        color: red;
+    }
+} 
+
+@media (orientation: landscape){
+    h1{
+        background-color: magenta;
+    }
+} 
+
+@media (min-width: 600px) and (max-width: 800px) {
+    h1 {
+        color: plum;
+    }
+}*/
