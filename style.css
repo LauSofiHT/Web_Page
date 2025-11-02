@@ -1,5 +1,7 @@
 html {
     font-size: 17.55px;
+    box-sizing: border-box;
+    /* to include border in width */
 }
 
 h1 {
@@ -800,6 +802,7 @@ article {
     display: flex;
     margin-top: 20px;
     background-color: aqua;
+    border: 5px solid black;
 }
 
 #flexbox .sidebar {
@@ -815,8 +818,19 @@ article {
 }
 
 /* Media Queries */
+#head_mediaquery {
+    color: black;
+    width: 400px;
+    height: 100px;
+    font-size: medium;
+    background-color: rgba(255, 255, 0, 0);
+    border: none;
+    border-radius: 0px;
+    text-align: center;
+}
+
 @media all and (max-width: 500px) {
-    #container{
+    #container {
         background-color: blue;
     }
 }
@@ -825,7 +839,7 @@ article {
     h1 {
         color: hsl(341, 80%, 61%);
         font-family: "Lobster Two";
-        background-color:  hsl(320, 70%, 90%);
+        background-color: hsl(320, 70%, 90%);
         border-bottom: 4px solid hsl(341, 74%, 61%);
         border-radius: 0;
     }
@@ -834,7 +848,7 @@ article {
 @media (max-width: 500px) {
     p {
         color: black;
-        background-color:  hsl(278, 60%, 90%);
+        background-color: hsl(278, 60%, 90%);
         font-family: Roboto;
         border-radius: 0;
     }
@@ -861,3 +875,181 @@ article {
         color: plum;
     }
 }*/
+
+#mediaquery nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#mediaquery ul {
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    #mediaquery nav {
+        flex-direction: column;
+    }
+
+    #mediaquery ul {
+        flex-direction: column;
+    }
+}
+
+/* price panel */
+#head_price {
+    color: black;
+    width: 400px;
+    height: 100px;
+    font-size: medium;
+    background-color: rgba(255, 255, 0, 0);
+    border: none;
+    border-radius: 0px;
+    text-align: center;
+}
+
+.panel {
+    font-family: 'Open Sans', cursive;
+    background-color: hsl(175, 63%, 90%);
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    border-radius: 10px;
+    padding: 15px 25px;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.panel div {
+    width: 500px;
+    height: auto;
+    color: hsl(354, 100%, 71%);
+    background-color: white;
+}
+
+.panel img {
+    width: 200px;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.panel h3 {
+    font-size: 18px;
+}
+
+.panel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing_plan {
+    border-bottom: 1px solid hsl(354, 100%, 91%);
+}
+
+.pricing_plan:last-child {
+    border-bottom: none;
+}
+
+.pricing_header {
+    color: hsl(354, 100%, 71%);
+    font-weight: 600px;
+    letter-spacing: 1px;
+}
+
+.pricing_features {
+    color: black;
+    margin: 50px 0 25px;
+}
+
+.pricing_features_item {
+    font-weight: 600px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5px;
+    padding: 15px 0;
+    border-top: 1px solid hsl(175, 63%, 85%);
+}
+
+.pricing_features_item:last-child {
+    border-bottom: 1px solid hsl(175, 63%, 85%);
+}
+
+.pricing_price {
+    margin: 15px;
+    font-size: 20px;
+    font-weight: 600px;
+    display: block;
+}
+
+.pricing_button {
+    font-size: 15px;
+    border: 3px solid hsl(175, 63%, 70%);
+    border-radius: 10px;
+    color: hsl(354, 100%, 50%);
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: background-color 200ms ease-in-out;
+}
+
+.pricing_button:hover, .pricing_button:focus {
+    background-color: hsl(175, 63%, 85%);
+}
+
+@media (min-width: 900px) {
+    .panel {
+        flex-direction: row;
+    }
+
+    .pricing_plan {
+        border-bottom: none;
+        border-right: 1px solid hsl(175, 63%, 50%);
+        padding: 25px;
+    }
+
+    .pricing_plan:last-child {
+        border-right: none;
+    }
+}
+
+/* bootstrap buttons */
+.bootstrap_buttons {
+    background-color: white;
+    border: 2px solid pink;
+    width: 320px;
+    height: auto;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: none;
+    margin: auto;
+}
+
+.bootstrap_buttons:first-of-type {
+    border-bottom: none;
+}
+
+.bootstrap_buttons:nth-of-type(2) {
+    border-top: none;
+}
+
+.bootstrap_buttons button {
+    width: 100px;
+}
