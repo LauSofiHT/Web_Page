@@ -1007,7 +1007,8 @@ article {
     transition: background-color 200ms ease-in-out;
 }
 
-.pricing_button:hover, .pricing_button:focus {
+.pricing_button:hover,
+.pricing_button:focus {
     background-color: hsl(175, 63%, 85%);
 }
 
@@ -1031,14 +1032,31 @@ article {
 .bootstrap_components {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /*align-items: center;*/
     background-color: black;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.buttons {
-    background-color: white;
+.bootstrap_components h4 {
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    text-align: center;
+}
+
+.bootstrap_components section {
+    background-color: black;
+}
+
+.display-3 {
+    color: white;
+    font-family: Arial;
+    font-weight: 200;
+    background-color: rgb(67, 0, 67);
+    border: none;
+    border-radius: 0px;
+    margin-bottom: 0px;
 }
 
 /* bootstrap buttons */
@@ -1079,10 +1097,9 @@ article {
     width: 300px;
     height: auto;
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 10px auto;
+    justify-content: flex-start;
 }
 
 .bootstrap_alerts div {
@@ -1091,6 +1108,49 @@ article {
     padding: 7px;
     width: 300px;
     height: 50px;
-    margin: auto;
+    margin: 0px;
     border-radius: 0px;
 }
+
+/* bootstrap colors */
+.bootstrap_colors {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bootstrap_colors span {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    height: 50px;
+}
+
+/* bootstrap_badges */
+.bootstrap_badges_and_buttonGroup {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.bootstrap_badges_and_buttonGroup .badges {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: auto;
+}
+
+.bootstrap_badges_and_buttonGroup button {
+    border-radius: 5px;
+}
+
+.bootstrap_badges_and_buttonGroup .btn-group {
+    width: auto;
+    align-items: center;
+    background-color: black;
+}
+
