@@ -1154,3 +1154,31 @@ article {
     background-color: black;
 }
 
+/* bootstrap_gridSystem */
+.bootstrap_gridSystem {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: auto;
+    height: auto;
+}
+
+.bootstrap_gridSystem .row {
+    color: white;
+    background-color: black;
+    width: auto;
+    height: auto;
+}
+
+.bootstrap_gridSystem .row div{
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: auto;
+    background-color: black;
+}
+
+.bootstrap_gridSystem img {
+    border: none;
+}
